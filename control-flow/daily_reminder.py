@@ -6,7 +6,7 @@ reminder ="'" + str(task) + "' is a " + str(priority) + " priority task."
 
 match priority:
     case "high":
-        reminder = "Reminder: " + reminder
+        reminder = "Reminder:", reminder
         if time_bound == "yes":
             reminder += " that requires immediate attention today!"
             print(reminder)
@@ -22,7 +22,7 @@ match priority:
             reminder += " Consider completing it when you have free time." 
             print(reminder)
     case "medium":
-        reminder = "Note: " + reminder
+        reminder = "Note:", reminder
         if time_bound == "yes":
             reminder += " that requires immediate attention today!"
             print(reminder)

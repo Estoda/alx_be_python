@@ -17,7 +17,9 @@ match oper:
         else:
             result = num1 / num2
             end = False
-
+    case _:
+        print("Wrong input.")
+        
 if(not end):
     print(f"The result is {result}")
 

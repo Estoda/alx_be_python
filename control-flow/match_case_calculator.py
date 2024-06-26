@@ -14,12 +14,12 @@ match oper:
     case "/":
         if num2 == 0:
             print("Cannot dividde by zero.")
+            end = False
         else:
             result = num1 / num2
-            end = False
     case _:
         print("Wrong input.")
 
-if(not end):
+if(end):
     print(f"The result is {result}")
 

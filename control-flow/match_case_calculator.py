@@ -9,7 +9,6 @@ match oper:
         print("The result is", str(num1 - num2) + '.')
     case '*':
         print("The result is", str(num1 * num2) + '.')
-
     case '/':
         if num2 == 0:
             print("Cannot dividde by zero.")

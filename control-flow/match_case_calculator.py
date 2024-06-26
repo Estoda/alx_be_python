@@ -1,7 +1,7 @@
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 oper = input("Choose the operation (+, -, *, /): ")
-result = ""
+result = 0
 end = True
 
 match oper:
@@ -19,7 +19,7 @@ match oper:
             end = False
     case _:
         print("Wrong input.")
-        
+
 if(not end):
     print(f"The result is {result}")
 

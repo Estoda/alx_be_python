@@ -21,5 +21,5 @@ match oper:
         print("Wrong input.")
 
 if(end):
-    print(f"The result is {result}")
+    print(f"The result is {result}.")
 

@@ -12,14 +12,20 @@ def conver_to_fahrenheit(celsius):
     print(f"{celsius}°C is {fahrenheit}°F")
 
 def main():
-    temperature = float(input("Enter the temperature to convert: "))
+    temperature = input("Enter the temperature to convert: ")
+    while not temperature.isdigit():
+        print("Invalid temperature. Please enter a numeric value.")
+        temperature = input("Enter the temperature to convert: ")
+    temperature = float(temperature)
     type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
+    while type != "C" and type != "F":
+        print("Invalid type. Try again")
+        type = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
     if type == "C":
         conver_to_fahrenheit(temperature)
     elif type == "F":
         convert_to_celsius(temperature)
-    else:
-        print("Invalid type. Try again")
+
 
 if __name__ == "__main__":
     main()

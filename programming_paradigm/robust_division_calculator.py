@@ -1,7 +1,7 @@
 
 
 
-def safe_divide(numerator, denominator):
+def safe_divide(numerator, denominator) -> None:
     try:
         result = float(numerator) / float(denominator)
     except ZeroDivisionError:

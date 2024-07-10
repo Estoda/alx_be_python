@@ -25,7 +25,7 @@ class Library:
             if b.title == title:
                 b.__is_checked_out = False
 
-    def return_book(self, title):
+    def return_book(self):
         for b in Library.__books:
             b: Book
             if b.title == title:
